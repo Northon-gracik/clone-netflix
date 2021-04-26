@@ -1,0 +1,113 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza: #AAAAAA;
+    --branco: #FFFFFF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color : var(--cinza); 
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: var(--branco);
+}
+
+/*Filme Principal*/
+
+main .filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .100) 100%), url("../img/wallpaper.jpg");
+    background-position: top center;
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.botao{
+    background-color: #00000080;
+    border: none;
+    color : var(--branco);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color : var(--branco);
+    color : var(--preto);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
